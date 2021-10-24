@@ -1,0 +1,21 @@
+.absolute-hide {
+    display: none;
+}
+
+.lock {
+    overflow-y: hidden;
+}
+
+.tabs-hide {
+    display: none !important;
+}
+
+.tabs-show {
+    display: grid;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+.header-menu-active {
+    padding: 0 0 4px 0;
+    border-bottom: 2px solid rgba($color: #363838, $alpha: .7);
+}

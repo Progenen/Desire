@@ -1,0 +1,122 @@
+.offer {
+    position: relative;
+    padding: 0 0 60px 0;
+    &::after {
+        content: "";
+        background-image: url("../images/graphic/home-page/main-slider_bg.jpg");
+        height: 722px;
+        top: 0;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    &__slider {
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__slide-img {
+        max-width: 703px;
+        max-height: 815px;
+        margin: 0 20px 0 -269px;
+        object-fit: cover;
+    }
+
+    &__slide-content {
+        margin: 174px 0 0 0;
+        max-width: 635px;
+    }
+
+    &__slide-title {
+        font-size: 110px;
+        margin: 0 0 26px 0;
+        &::after {
+            max-width: 185px;
+        }
+    }
+
+    &__slide-text {
+    }
+}
+
+@media (max-width: 1440px) {
+    .offer {
+        &::after {
+        }
+        &__slider {
+        }
+
+        &__slide {
+            display: flex;
+        }
+
+        &__slide-img {
+            width: 100%;
+            height: 100%;
+            margin: 0 20px 0 0;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__slide-content {
+        }
+
+        &__slide-title {
+            font-size: 70px;
+        }
+
+        &__slide-text {
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .offer {
+        padding: 0 0 0 0;
+        &::after {
+            height: 80%;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .offer {
+        &__slide-content {
+            margin: 120px 0 0 0;
+        }
+        &__slide-title {
+            font-size: 48px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .offer {
+        &__slide {
+            flex-wrap: wrap;
+        }
+        &__slide-img {
+            max-width: 403px;
+        }
+        &__slide-content {
+            margin-top: -240px;
+            width: 100%;
+            background: #fffff09c;
+            padding: 15px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .offer {
+        &__slide-content {
+            margin-top: -140px;
+            background: #fffff09c;
+            padding: 15px;
+        }
+    }
+}

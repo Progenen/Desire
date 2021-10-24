@@ -1,0 +1,34 @@
+// Libs
+@import 'libs/slick';
+@import '../../node_modules/animate.css/animate.min.css';
+@import 'libs/fancybox';
+// Main
+@import "support";
+@import "all";
+@import "script-classes";
+// Blocks
+@import 'header';
+@import 'footer';
+@import 'blocks/rightside-menu_block';
+@import 'blocks/new-collection_block';
+@import 'blocks/gallery_block';
+@import 'blocks/blog_block';
+@import 'blocks/breadcrumbs_block';
+@import 'blocks/gallery-preview_block';
+// Home Page
+@import 'home-page/offer';
+@import 'home-page/new-collection-section';
+@import 'home-page/about-section';
+@import 'home-page/how-home-page.scss';
+@import 'home-page/gallery-home-page';
+@import 'home-page/blog-home-page';
+// About Page
+@import 'about-page/about-page-offer';
+@import 'about-page/about-page-balance';
+@import 'about-page/about-page-video';
+@import 'about-page/about-page-details';
+@import 'about-page/about-page-partners';
+// Contacts Page
+@import 'contacts-page/contacts-page-map';
+@import 'contacts-page/contacts-page-contacts';
+@import 'contacts-page/contacts-page-gallery-preview';

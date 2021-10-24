@@ -1,0 +1,9 @@
+.blog-home-page {
+
+    &__title {
+        text-align: center;
+        &::after {
+            display: none;
+        }
+    }
+}

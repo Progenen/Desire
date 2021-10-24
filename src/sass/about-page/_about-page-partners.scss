@@ -1,0 +1,29 @@
+.about-page-partners {
+    &__items {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 100%;
+        padding: 0 34px 0 34px;
+        img {
+            max-width: 302px;
+            min-width: 150px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:560px){
+    .about-page-partners {
+        &__item {
+            padding: 0;
+            img {
+                margin: auto;
+                max-width: 150px;
+            }
+        }
+    }
+}

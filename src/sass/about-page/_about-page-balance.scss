@@ -1,0 +1,29 @@
+.about-page-balance {
+    padding: 129px 0 90px 0;
+    &__title {
+    }
+
+    &__block {
+        max-width: 825px;
+        width: 100%;
+        &:nth-child(even) {
+            margin-left: auto;
+        }
+    }
+
+    &__text {
+        margin: 45px 0 0 0;
+    }
+}
+
+@media (max-width:768px){
+    .about-page-balance {
+        padding: 60px 0 30px 0;
+    }
+}
+
+@media (max-width:550px){
+    .about-page-balance__text {
+        margin: 25px 0 0 0;
+    }
+}

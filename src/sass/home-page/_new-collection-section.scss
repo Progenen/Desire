@@ -1,0 +1,22 @@
+.new-collection-section {
+    text-align: center;
+    padding: 73px 0 104px 0;
+    &__title {
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__text {
+        margin: 24px auto;
+        max-width: 730px;
+        width: 100%;
+    }
+}
+
+@media (max-width:1200px){
+    .new-collection-section {
+        padding: 40px 0 52px 0;
+    }
+}   

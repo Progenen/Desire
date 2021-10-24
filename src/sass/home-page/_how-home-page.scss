@@ -1,0 +1,123 @@
+.how-home-page {
+    padding: 84px 0 50px 0;
+    &__title {
+        text-align: center;
+        &::after {
+            content: none;
+        }
+    }
+
+    &__steps {
+        margin: 40px 0 0 0;
+        display: flex;
+        position: relative;
+        &:first-child {
+            display: none;
+        }
+    }
+
+    &__steps-line {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $colorText1;
+        opacity: 1;
+    }
+
+    &__step {
+        max-width: 268px;
+        width: 100%;
+        height: 200px;
+        margin: 0 20px 0 0;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background: rgba($color: $colorText1, $alpha: 0.7);
+            height: 20px;
+            width: 1.8px;
+            bottom: -19px;
+        }
+        &:nth-child(2n + 1) {
+            margin: 238px 0 0 0;
+            &::after {
+                bottom: 0;
+                top: -19px;
+            }
+        }
+        &:first-of-type {
+           &::after {
+               width: 10px;
+               height: 10px;
+               bottom: -23px;
+               border-radius: 50%;
+               background: $colorText1;
+           }
+        }
+    }
+
+    &__step-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    &__step-icon {
+        margin-right: 10px;
+    }
+
+    &__step-title {
+        font-size: 16px;
+        color: $colorText1;
+        font-family: "Montserrat";
+        font-weight: 700;
+    }
+
+    &__step-text {
+    }
+}
+
+@media (max-width:640px){
+    .how-home-page {
+        &__steps {
+            flex-direction: column;
+            max-width: 280px;
+            margin: 40px auto 0 auto;
+        }
+        &__steps-line {
+            height: 100%;
+            width: 1px;
+            bottom: 0;
+            left: 0;
+        }
+        &__step {
+            width: 100%;
+            margin: 0 0 0 30px;
+            &::after {
+                content: "";
+                position: absolute;
+                background: rgba($color: $colorText1, $alpha: 0.7);
+                height: 1.8px;
+                width: 20px;
+                top: 0;
+                left: -30px;
+            }
+            &:nth-child(2n + 1) {
+                margin: 0 0 0 30px;
+                &::after {
+                    top: 0;
+                }
+            }
+            &:first-of-type {
+               &::after {
+                   width: 10px;
+                   height: 10px;
+                   left: -34px;
+                   border-radius: 50%;
+                   background: $colorText1;
+               }
+            }
+        }
+    }
+}
